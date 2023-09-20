@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float a,b,c;
+    cout<<"Сколько дней вы курили?";
+    cin>>b;
+    cout<<"Сколько сигарет в день вы курили?";
+    cin>>c;
+    a=5*b*c;
+    cout<<"Вы потеряли "<<a<<" минут, или же "<<a/525600<<" лет";
+}
