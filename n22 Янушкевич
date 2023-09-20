@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float a,b,c;
+    cout<<"Сколько должна быть масса раствора?";
+    cin>>b;
+    cout<<"Какая должна быть массовая доля?(в процентах)";
+    cin>>c;
+    a=c/(100/b);
+    cout<<"Масса соли="<<a<<endl;
+    cout<<"Масса воды="<<b-a;
+}
