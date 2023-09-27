@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b;
+    cin>>a;
+    b=a/100+a%10+a/10%10;
+    if(b>9 && b<100){
+        cout<<"yep";
+    }
+    else{
+        cout<<"nope";
+    }
+}
