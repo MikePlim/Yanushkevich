@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a;
+    cout<<"Введите температуру плавления: ";
+    cin>>a;
+    switch (a) {
+        case 232 :
+        cout<<"олово";
+        break;
+        case 327 :
+        cout<<"свинец";
+        break;
+        case 1200 :
+        cout<<"чугун";
+        break;
+        case 420 :
+        cout<<"цинк";
+        break;
+        case 660 :
+        cout<<"алюминий";
+        break;
+        case 962 :
+        cout<<"серебро";
+        break;
+        case 1000 :
+        cout<<"латунь";
+        break;
+        case 1064 :
+        cout<<"золото";
+        break;
+        case 1085 :
+        cout<<"медь";
+        break;
+        case 3387 :
+        cout<<"вольфрам";
+        break;
+        default:
+        cout<<"отсутствует в списке";
+    }
+}
