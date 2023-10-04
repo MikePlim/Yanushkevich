@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a;
+    cout<<"Какую оценку вы получили? ";
+    cin>>a;
+    switch (a) {
+        case 1:
+        cout<<"очень плохо";
+        break;
+        case 2:
+        cout<<"плохо";
+        break;
+        case 3:
+        cout<<"удовлетворительно";
+        break;
+        case 4:
+        cout<<"хорошо";
+        break;
+        case 5:
+        cout<<"отлично";
+        break;
+        default:
+        cout<<"другая балловая система";
+        
+    }
+}
