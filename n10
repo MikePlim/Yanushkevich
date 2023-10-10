@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    long long n; 
+    int a, b = 0; 
+    cout<<"Введите число: ";
+    cin >> n;
+    while(n != 0)
+    {
+        a = n % 10;
+        if (a > b) 
+        b = a;
+        n /= 10;
+    }
+    cout << b;
+}
