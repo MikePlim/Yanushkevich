@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N;
+    float *a;
+    cin >> N;
+     a = new float[N];
+     int i, k=0,b=1;
+     for (i = 0; i<N; i++)
+         cin >> a[i];
+     for (i = 1; i<N; i++)
+     {
+         if (a[i - 1] <= a[i])
+             b++;
+         else if (b >= 2)
+             k++;
+         else b = 1;
+     }
+     if (a[N - 1] > a[N - 2])
+         k++;
+     cout << k;
+    return 0;
+}
