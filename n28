@@ -1,0 +1,28 @@
+#include <iostream>
+
+int main()
+{
+    float min, max;
+    int m, n, i, j;
+    std::cin>>n>>m;
+    float**A=new float*[n];
+    for (i=0; i<n; i++)
+        A[i] = new float[m];
+    for (i=0; i<n; i++) 
+    {
+        for (j=0; j<m; j++)
+            std::cin>>A[i][j];
+    }
+    for (j=0; j<m; j++)
+    {
+        max=A[0][j];
+        for (i=0; i<n; i++)
+        {
+            if (A[i][j]>max) max=A[i][j];
+        }
+        if (j==0) min=max;
+        else if (max<min) min=max;
+    }
+    std::cout<<min;
+    return 0;
+}
