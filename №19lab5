@@ -1,0 +1,20 @@
+#include <iostream>
+#include<math.h>
+#include<stdio.h>
+using namespace std;
+
+
+float RingS(float R, float r)
+{
+    return 3.14*(R*R-r*r);
+    
+}
+int main() 
+{
+    float R1, R2, R3, r1, r2, r3;
+    cin>>R1>>r1;
+    cin>>R2>>r2;
+    cin>>R3>>r3;
+    cout<<RingS(R1, r1)<<" "<<RingS(R2, r2)<<" "<<RingS(R3, r3);
+    return 0;
+}
